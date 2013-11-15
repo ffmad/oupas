@@ -40,7 +40,7 @@ h2{
 
 header{
 	width : 100%;
-	background : #bf0426;
+	background : #4b7da0;
 	
 }
 
@@ -70,19 +70,22 @@ header .logo a:hover{
 	header #menu a{
 		color: white;
 		font-size: 1.3em;
-		padding : 10px 10px;
+		padding : 15px 13px;
 		float: left;
+		text-transform: uppercase;
+		font-size: 13px;
+		font-weight: bold;
 	}
 
 	header #menu a:hover{
-		background: white;
-		color: #bf0426;
+		background: #dd4646;
+		color: white;
 		text-decoration: none;
 	}
 
 	header #menu li.active a{
 		background: white;
-		color: #bf0426;
+		color: #dd4646;
 	}
 	
 	header #follow {
@@ -110,13 +113,13 @@ header .logo a:hover{
 	height: 700px;
 }
 section .quote{
-	margin-bottom: 80px;
+	margin-bottom: 60px;
 }
 
 	/** STYLE CONTENT QUOTE **/
 
 	section .quote .content-quote{
-		border : 1px solid #51504F;
+		border: 1px solid #6B6B96;
 		/*border-top-left-radius: 15px;
 		border-top-right-radius: 15px;*/
 		padding: 15px;
@@ -132,14 +135,14 @@ section .quote{
 	}
 
 	section .quote .content-quote .aparte p{
-		color: #bf0426;
+		color: #dd4646;
 		font-size: 0.8em;
 		text-align: center;
 	}
 
 	/** STYLE SOCIAL QUOTE **/
 
-	.social a {color: #bf0426;}
+	.social a {color: #4b7da0;}
 
 	section .quote .social{
 		margin-top: 10px;
@@ -150,26 +153,26 @@ section .quote{
 
 	section .quote .social span.categ a{
 		width: 100px;
-		padding: 5px 10px;
-		background:#bf0426;
-		border : 1px solid #bf0426;
+		padding: 8px 15px;
+		background:#4b7da0;
+		border : 1px solid #4b7da0;
 		color : #fff;
 		margin-right: 5px;
 		text-transform: capitalize;
 	}
 	
 	section .quote .social span.categ a:hover{
-		border: 1px solid #A3031F;
-		background:#A3031F;
+		border: 1px solid #dd4646;
+		background:#dd4646;
 	}
 
 	section .quote .social .btn-comment,
 	section .quote .social .s-right .btn-like,
 	section .quote .social .s-right .btn-social,
 	section .quote .social .ldc-ul_cont{
-		padding: 5px 10px;
-		border : 1px solid #bf0426;
-		color: #bf0426;
+		padding: 8px 15px;
+		border : 1px solid #4b7da0;
+		color: #4b7da0;
 		cursor : pointer;
 
 	}
@@ -178,10 +181,10 @@ section .quote{
 	section .quote .social .s-right .btn-like:hover,
 	section .quote .social .s-right .btn-social:hover,
 	section .quote .social .ldc-ul_cont:hover{
-		padding: 5px 10px;
-		border : 1px solid #bf0426;
-		color: white;
-		background : #bf0426;
+		padding: 8px 15px;
+		border : 1px solid #dd4646;
+		color: #dd4646;
+		background: white;
 	}
 
 /** SIDEBAR **/
@@ -200,17 +203,22 @@ section .quote{
 	display: block;
 	width: 100px;
 	padding: 5px 10px;
-	background:#bf0426;
-	border : 1px solid #bf0426;
+	background:#4b7da0;
+	border : 1px solid #4b7da0;
 	color : #fff;
 	margin-bottom: 5px;
+}
+
+.sidebar .menu-sidebar li a:hover{
+	background:#dd4646;
+	border : 2px solid #dd4646;
 }
 
 /** FOOTER **/
 
 footer{
 	width: 100%;
-	background: #bf0426;
+	background: #4b7da0;
 	text-align: center;
 	color: white;
 	margin: 0px;
@@ -224,7 +232,7 @@ footer p{
 
 label{
 	width: 130px;
-	background: #bf0426 ;
+	background: #4b7da0 ;
 	color: white;
 	padding: 5px 0px 5px 10px;
 	float: left;
@@ -263,7 +271,7 @@ textarea{
 #quote_submit{
 	width: 100%;
 	font-size: 1.4em;
-	background: #bf0426 ;
+	background: #4b7da0 ;
 	color: white;
 	padding: 5px 40px;
 	border:none;
@@ -275,22 +283,22 @@ textarea{
 /** Page 404 **/
 .style404{
 	font-size: 4em;
-	color:  #bf0426 ;
+	color:  #4b7da0 ;
 
 	margin: 100px 0px;
 }
 
 /** Formulaire recherche **/
 #searchsubmit{
-	border: 1px solid #bf0426 ;
-	color: #bf0426 ;
+	border: 1px solid #4b7da0 ;
+	color: #4b7da0 ;
 	padding: 5px;
 	margin-top: -10px;
 	background: white;
 }
 #searchsubmit:hover{
 	color: white;
-	background: #bf0426 ;
+	background: #4b7da0 ;
 }
 
 .success{
@@ -323,4 +331,46 @@ textarea{
 
 .alignright{
 	float: right;
+}
+
+/** OU pas Style **/
+
+.oupas-slider {
+	display: block;
+	border: 1px solid #6B6B96;
+	border-top: none;
+	text-align: center;
+	background-color: #4b7da0;
+	color: white; cursor:pointer; padding-right: 100px;
+	padding: 10px;
+}
+
+.oupas-pannel {
+	display: block; 
+	border: 1px solid #51504F; 
+	border-top: none; 
+	padding: 15px;
+}
+
+#twitter-widget iframe {
+	width: 100%;
+	height: 200px;
+}
+
+.title-style {
+display: block;
+border-top: none;
+background-color: #4b7da0;
+color: white;
+padding-right: 100px;
+padding: 10px;
+text-transform: uppercase;
+font-size: 13px;
+font-weight: bold;
+}
+
+#twitter-widget {
+	border: 1px solid #6B6B96;
+	display: block;
+	margin-bottom: 30px;
 }

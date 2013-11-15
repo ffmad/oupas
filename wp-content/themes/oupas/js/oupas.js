@@ -1,5 +1,9 @@
 
 
 $( document ).ready(function() {
-    $( ".slideoupas" ).hide();
+    $( ".oupas-pannel" ).hide();
+});
+
+$( document ).ready(function() {
+    $( ".twitter-widget-0 " ).width("100%");
 });

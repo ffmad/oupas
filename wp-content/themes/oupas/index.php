@@ -9,6 +9,13 @@ get_header(); ?>
 	<div class="container">
 		<div class="row test">
 			<section class="span6 offset3">
+			
+				<!-- Twitter Widget -->
+				<span id="twitter-widget">
+					<span class="title-style">Twitter ... ou pas</span>
+					<a class="twitter-timeline" href="https://twitter.com/search?q=%23oupas" data-widget-id="401344243316170752">Tweets concernant "#oupas"</a>
+				</span>
+			
 				<?php if($form_messages) echo $form_messages;?>
 				<?php wp_reset_postdata(); ?>
 				<?php 
@@ -47,13 +54,8 @@ get_header(); ?>
 								</p>
 							</div>
 							</a>
-							<span id="machin" onclick="$('#oupas<?php echo $counter; ?>').slideToggle( 'slow');" style="display: block;
-border: 1px solid #51504F;
-border-top: none;
-text-align: center;
-background-color: #bf0426;
-color: white; cursor:pointer; padding-right: 100px;">OU PAS !</span>
-							<span id="oupas<?php echo $counter; ?>" class="slideoupas" style="display:block; border: 1px solid #51504F; border-top: none; padding: 15px;"> <?php the_field('en_vrai');?></span>
+							<span class="oupas-slider" onclick="$(this).next().slideToggle('slow');" style="">Ou Pas <i class="icon-hand-down icon-white" style="padding-left: 5px;"></i></span>
+							<span class="oupas-pannel" > <?php the_field('en_vrai');?></span>
 
 							<div class="social">
 								<div class="s-right">
@@ -97,4 +99,5 @@ color: white; cursor:pointer; padding-right: 100px;">OU PAS !</span>
 		</div>
 	</div>
 
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 <?php get_footer(); ?>

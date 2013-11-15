@@ -49,13 +49,8 @@ get_header(); ?>
 								</p>
 							</div>
 							</a>
-							<span id="machin" onclick="$(this).next().slideToggle('slow');" style="display: block;
-border: 1px solid #51504F;
-border-top: none;
-text-align: center;
-background-color: #bf0426;
-color: white; cursor:pointer; padding-right:100px;">OU PAS !</span>
-							<span class="slideoupas" style="display:block; border: 1px solid #51504F; border-top: none; padding: 15px;"> <?php the_field('en_vrai');?></span>
+							<span class="oupas-slider" onclick="$(this).next().slideToggle('slow');" style="">Ou Pas <i class="icon-hand-down icon-white" style="padding-left: 5px;"></i></span>
+							<span class="oupas-pannel" > <?php the_field('en_vrai');?></span>
 
 							<div class="social" style="margin-top: -10px;">
 								<?php echo do_shortcode('[moderation-form]'); ?>
