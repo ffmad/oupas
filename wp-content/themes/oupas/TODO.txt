@@ -1,0 +1,6 @@
+TODO LIST
+---------
+
+- Declarer scripts + css dans le functions.php
+- Mettre variables crédits éditable avec Tree Options
+- Installer Dynamic To Top

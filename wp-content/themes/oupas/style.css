@@ -1,0 +1,326 @@
+/*
+Theme Name: Ou Pas Theme
+Theme URI: http://hetic.net/
+Description: Le theme pour le site Ou Pas
+Version : 1.0
+Author: Ou Pas Admin
+Author URI: http://hetic.net
+*/
+
+
+
+/* ----------------------
+	STYLE BASIC
+   ---------------------- */
+html{height: 100%}
+body{
+	font-size: 14px;
+	font-family : Helvetica;
+	color : #51504F;
+	background: white;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	height: 100%;
+}
+
+a{
+	text-decoration: none ;
+
+}
+a:hover {text-decoration: none}
+
+h2{
+	margin-bottom : 40px;
+	text-align: center;
+}
+
+/* ----------------------
+	STYLE HEADER
+   ---------------------- */
+
+header{
+	width : 100%;
+	background : #bf0426;
+	
+}
+
+header .logo{
+	position: absolute;
+	left: 15%;
+	top: 2%;
+}
+
+header .logo a:hover{
+	background: none;
+}
+
+@media screen and (max-width: 979px) {
+	header .logo{
+		display:none;
+	}
+}
+
+	/** Style Menu **/
+
+	header #menu ul{
+		list-style-type: none;
+		margin-top: -10px;
+		margin-left: 0px;
+	}
+	header #menu a{
+		color: white;
+		font-size: 1.3em;
+		padding : 10px 10px;
+		float: left;
+	}
+
+	header #menu a:hover{
+		background: white;
+		color: #bf0426;
+		text-decoration: none;
+	}
+
+	header #menu li.active a{
+		background: white;
+		color: #bf0426;
+	}
+	
+	header #follow {
+		color: white;
+		margin-top: 5px;
+
+	}
+
+	header #follow a{
+		
+		color: #A3031F;
+	}
+
+	header #follow a:hover{
+		color: white;
+	}
+	header #follow a.twt{margin-left: 15px;}
+
+/* ----------------------
+	STYLE QUOTE
+   ---------------------- */
+.test{
+	background: rgba(255,255,255,1);
+	padding-top: 40px;
+	height: 700px;
+}
+section .quote{
+	margin-bottom: 80px;
+}
+
+	/** STYLE CONTENT QUOTE **/
+
+	section .quote .content-quote{
+		border : 1px solid #51504F;
+		/*border-top-left-radius: 15px;
+		border-top-right-radius: 15px;*/
+		padding: 15px;
+		color : #51504F;
+	}
+	
+	section .quote .content-quote:hover{
+		background: #fff5f5;
+		text-decoration : none;
+	}
+	section .quote .content-quote .aparte{
+
+	}
+
+	section .quote .content-quote .aparte p{
+		color: #bf0426;
+		font-size: 0.8em;
+		text-align: center;
+	}
+
+	/** STYLE SOCIAL QUOTE **/
+
+	.social a {color: #bf0426;}
+
+	section .quote .social{
+		margin-top: 10px;
+	}
+
+	section .quote .social .s-right{float: right;}
+	section .quote .social .s-left{float: left;}
+
+	section .quote .social span.categ a{
+		width: 100px;
+		padding: 5px 10px;
+		background:#bf0426;
+		border : 1px solid #bf0426;
+		color : #fff;
+		margin-right: 5px;
+		text-transform: capitalize;
+	}
+	
+	section .quote .social span.categ a:hover{
+		border: 1px solid #A3031F;
+		background:#A3031F;
+	}
+
+	section .quote .social .btn-comment,
+	section .quote .social .s-right .btn-like,
+	section .quote .social .s-right .btn-social,
+	section .quote .social .ldc-ul_cont{
+		padding: 5px 10px;
+		border : 1px solid #bf0426;
+		color: #bf0426;
+		cursor : pointer;
+
+	}
+
+	section .quote .social .btn-comment:hover,
+	section .quote .social .s-right .btn-like:hover,
+	section .quote .social .s-right .btn-social:hover,
+	section .quote .social .ldc-ul_cont:hover{
+		padding: 5px 10px;
+		border : 1px solid #bf0426;
+		color: white;
+		background : #bf0426;
+	}
+
+/** SIDEBAR **/
+
+.sidebar p{
+	font-size: 1.2em;
+	font-weight: 600;
+}
+
+.sidebar .menu-sidebar{
+	list-style-type: none;
+	margin-left: 0px;
+}
+
+.sidebar .menu-sidebar li a{
+	display: block;
+	width: 100px;
+	padding: 5px 10px;
+	background:#bf0426;
+	border : 1px solid #bf0426;
+	color : #fff;
+	margin-bottom: 5px;
+}
+
+/** FOOTER **/
+
+footer{
+	width: 100%;
+	background: #bf0426;
+	text-align: center;
+	color: white;
+	margin: 0px;
+}
+footer p{
+	margin: 0px;
+	padding: 10px;
+}
+
+
+
+label{
+	width: 130px;
+	background: #bf0426 ;
+	color: white;
+	padding: 5px 0px 5px 10px;
+	float: left;
+	margin-right: 20px;
+}
+
+#quote_auteur{
+	padding: 4px;
+	border: 1px solid grey;
+	border-radius: 0px;
+	width: 150px ;
+}
+
+#quote_sexe,#quote_themes{
+	padding: 4px;
+	border: 1px solid grey;
+	border-radius: 0px;
+	width: 160px;
+}
+
+textarea{
+	margin-top: -20px;
+	width: 69%;
+	padding: 4px;
+	border: 1px solid grey;
+	border-radius: 0px;
+}
+
+.submit{
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 70px;
+}
+
+
+#quote_submit{
+	width: 100%;
+	font-size: 1.4em;
+	background: #bf0426 ;
+	color: white;
+	padding: 5px 40px;
+	border:none;
+
+}
+
+#quote_submit:hover{background : #A3031F;}
+
+/** Page 404 **/
+.style404{
+	font-size: 4em;
+	color:  #bf0426 ;
+
+	margin: 100px 0px;
+}
+
+/** Formulaire recherche **/
+#searchsubmit{
+	border: 1px solid #bf0426 ;
+	color: #bf0426 ;
+	padding: 5px;
+	margin-top: -10px;
+	background: white;
+}
+#searchsubmit:hover{
+	color: white;
+	background: #bf0426 ;
+}
+
+.success{
+	padding: 5px;
+	color: green;
+}
+
+.successParent{
+	border: 1px solid green;
+	text-align: center;
+
+
+	margin-bottom: 50px;
+}
+
+#error{
+	text-align: center;
+	color: red;
+	margin-bottom: 20px;
+}
+
+
+.navigation{
+	margin-bottom: 40px;
+}
+.alignleft a,.alignright a{ padding: 5px;}
+.alignleft{
+	float: left;
+}
+
+.alignright{
+	float: right;
+}
