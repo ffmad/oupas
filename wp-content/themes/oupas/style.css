@@ -91,16 +91,15 @@ header .logo a:hover{
 	header #follow {
 		color: white;
 		margin-top: 5px;
-
 	}
 
 	header #follow a{
-		
-		color: #A3031F;
+		color: white;
 	}
 
 	header #follow a:hover{
-		color: white;
+		color: #dd4646;
+		background: none;
 	}
 	header #follow a.twt{margin-left: 15px;}
 
