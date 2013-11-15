@@ -9,7 +9,13 @@ get_header(); ?>
 	<div class="container">
 		<div class="row test">
 			<section class="span6 offset3">
-			
+				
+				<!-- Twitter Widget -->
+				<span id="intro-widget">
+					<span class="title-style">Intro</span>
+					<p>Parceque vous avez envie de connaître ce site ... ou pas</p>
+				</span>
+				
 				<!-- Twitter Widget -->
 				<span id="twitter-widget">
 					<span class="title-style">Twitter ... ou pas</span>
