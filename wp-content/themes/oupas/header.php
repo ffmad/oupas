@@ -45,7 +45,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="logo">
-					<a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url'); ?>/img/logo-beta.png" alt="Ou Pas"/></a>
+					<a href="<?php bloginfo('url');?>"><img src="<?php bloginfo('template_url'); ?>/img/logo-beta_vert.png" alt="Ou Pas"/></a>
 				</div>
 
 				<nav id="menu" class="span6 offset3">

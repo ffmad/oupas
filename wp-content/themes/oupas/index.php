@@ -13,7 +13,8 @@ get_header(); ?>
 				<!-- Twitter Widget -->
 				<span id="intro-widget">
 					<span class="title-style">Intro</span>
-					<p>Parceque vous avez envie de connaître ce site ... ou pas</p>
+					<p>Parceque vous avez vivez des histoires extaordinaires ... ou pas
+					<br>Pour découvrir l'envers du décors, cliquez sur la barre en dessous de chaque post</p>
 				</span>
 				
 				<!-- Twitter Widget -->
@@ -45,7 +46,7 @@ get_header(); ?>
 							<div class="content-quote">
 								<span style="display: block; float: left;">
 									<?php if (get_the_post_thumbnail()) : ?><div style="width: 80px; max-height: 80px; border:1px rgb(201, 163, 163) ridge" ><?php the_post_thumbnail(array(100, 100)) ?></div>
-									<?php else : ?><img src="<?php bloginfo('template_url'); ?>/img/logo.png" style="width: 80px; max-height: 80px; border:1px rgb(201, 163, 163) ridge" alt="Ou Pas"/>
+									<?php else : ?><img src="<?php bloginfo('template_url'); ?>/img/logo_vert.png" style="width: 80px; max-height: 80px; border:1px rgb(201, 163, 163) ridge" alt="Ou Pas"/>
 									<?php endif; ?>
 									<span class="aparte">
 										<p><?php the_field('auteur');?> 
@@ -60,7 +61,7 @@ get_header(); ?>
 								</p>
 							</div>
 							</a>
-							<span class="oupas-slider" onclick="$(this).next().slideToggle('slow');" style="">Ou Pas <i class="icon-hand-down icon-white" style="padding-left: 5px;"></i></span>
+							<span class="oupas-slider" onclick="$(this).next().slideToggle('slow');" style="">>>> Ou Pas <<<</span>
 							<span class="oupas-pannel" > <?php the_field('en_vrai');?></span>
 
 							<div class="social">
