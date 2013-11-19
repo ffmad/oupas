@@ -13,7 +13,7 @@ get_header(); ?>
 				<!-- Twitter Widget -->
 				<span id="intro-widget">
 					<span class="title-style">Intro</span>
-					<p>Parceque vous avez vivez des histoires extaordinaires ... ou pas
+					<p>Parceque vous vivez des histoires extaordinaires ... ou pas
 					<br>Pour découvrir l'envers du décors, cliquez sur la barre en dessous de chaque post</p>
 				</span>
 				
