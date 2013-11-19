@@ -1,4 +1,7 @@
 <?php
+
+require_once('wp_bootstrap_navwalker.php');
+
 /**
  * TwentyTen functions and definitions
  *

@@ -23,6 +23,10 @@ body{
 	height: 100%;
 }
 
+.container {
+	max-width: 870px;
+}
+
 a{
 	text-decoration: none ;
 
@@ -32,76 +36,163 @@ a:hover {text-decoration: none}
 h2{
 	margin-bottom : 40px;
 	text-align: center;
+	margin-top : 30px;
 }
 
 /* ----------------------
 	STYLE HEADER
    ---------------------- */
 
-header{
+header.navbar-inverse{
 	width : 100%;
 	background : #4b7da0;
-	
+	border-bottom-color: white;
 }
 
-header .logo{
+header.navbar-inverse .logo{
 	position: absolute;
-	left: 15%;
+	left: 12%;
 	top: 2%;
 }
 
-header .logo a:hover{
+header.navbar-inverse .logo a:hover{
 	background: none;
 }
 
-@media screen and (max-width: 979px) {
-	header .logo{
+header.navbar-inverse .navbar-brand, header.navbar-inverse .navbar-brand:hover {
+	color: #4b7da0;
+	cursor: none;
+}
+
+@media screen and (min-width: 1190px) and (max-width: 1340px) {
+	header.navbar-inverse .logo{
+		position: absolute;
+		left: 7%;
+		top: 2%;
+	}
+}
+
+@media screen and (min-width: 1080px) and (max-width: 1190px) {
+	header.navbar-inverse .logo{
+		position: absolute;
+		left: 3%;
+		top: 2%;
+	}
+}
+
+@media screen and (min-width: 1036px) and (max-width: 1080px) {
+	header.navbar-inverse .logo{
+		position: absolute;
+		left: 1%;
+		top: 2%;
+	}
+}
+
+@media screen and (max-width: 1036px) {
+	header.navbar-inverse .logo{
 		display:none;
 	}
+	header.navbar-inverse .navbar-brand, header.navbar-inverse .navbar-brand:hover {
+		color: white;
+		cursor: pointer;
+	}
+}
+
+.span6 {
+	margin-left: 100px;
+	width: 570px;
+	float: left;
+}
+
+@media screen and (max-width: 990px) {
+	.span6 {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
+.span3 {
+	float: left;
+	min-height: 1px;
+	margin-left: 30px;
+	margin-top: 30px;
 }
 
 	/** Style Menu **/
 
-	header #menu ul{
+	header.navbar-inverse ul.nav{
 		list-style-type: none;
 		margin-top: -10px;
-		margin-left: 0px;
+		margin-left: -40px;
 	}
-	header #menu a{
+	
+	header.navbar-inverse .nav>li>a {
 		color: white;
 		font-size: 1.3em;
-		padding : 15px 13px;
+		padding : 16px 13px;
 		float: left;
 		text-transform: uppercase;
 		font-size: 13px;
 		font-weight: bold;
 	}
 
-	header #menu a:hover{
+@media screen and (max-width: 770px) {
+	header.navbar-inverse ul.nav{
+		list-style-type: none;
+		margin-top: 0px;
+		margin-left: -15px;
+	}
+	
+	header.navbar-inverse .nav>li>a {
+		color: white;
+		font-size: 1.3em;
+		padding: 15px 20px;
+		float: none;
+		text-transform: uppercase;
+		font-size: 13px;
+		font-weight: bold;
+	}
+	
+	.span6 {
+		margin-left: 10px;
+		margin-right: 10px;
+		width: auto;
+	}
+	
+	.span3 {
+		float: left;
+		min-height: 1px;
+		margin-left: 20px;
+		margin-bottom: 10px;
+		margin-top: -20px;
+	}
+}
+	
+	header.navbar-inverse .nav>li>a:hover{
 		background: #4BAC80;
 		color: white;
 		text-decoration: none;
 	}
 
-	header #menu li.active a{
+	header.navbar-inverse .nav>li.active a{
 		background: white;
 		color: #187048;
 	}
 	
-	header #follow {
+	header.navbar-inverse #follow {
 		color: white;
 		margin-top: 5px;
 	}
 
-	header #follow a{
+	header.navbar-inverse #follow a{
 		color: white;
 	}
 
-	header #follow a:hover{
+	header.navbar-inverse #follow a:hover{
 		color: #4BAC80;
 		background: none;
 	}
-	header #follow a.twt{margin-left: 15px;}
+	header.navbar-inverse #follow a.twt{margin-left: 15px;}
 
 /* ----------------------
 	STYLE QUOTE
@@ -115,6 +206,15 @@ section .quote{
 	margin-bottom: 60px;
 }
 
+@media screen and (max-width: 990px) {
+	section .quote{
+		margin-bottom: 90px;
+	}
+	.sidebar .menu-sidebar li a {
+		width: 300px;
+	}
+}
+
 	/** STYLE CONTENT QUOTE **/
 
 	section .quote .content-quote{
@@ -126,7 +226,7 @@ section .quote{
 	}
 	
 	section .quote .content-quote:hover{
-		background: #fff5f5;
+		background: #F5F6FF;
 		text-decoration : none;
 	}
 	section .quote .content-quote .aparte{
@@ -185,6 +285,19 @@ section .quote{
 		color: #4BAC80;
 		background: white;
 	}
+	
+@media screen and (max-width: 700px) {
+	section .quote .social .s-right{float: left;}
+	section .quote .social .s-left{
+		float: left;
+		margin-right: 10px;
+		display: block;
+		margin-top: 18px;
+	}
+	section .quote {
+		margin-bottom: 120px;
+	}
+}
 
 /** SIDEBAR **/
 
@@ -195,12 +308,12 @@ section .quote{
 
 .sidebar .menu-sidebar{
 	list-style-type: none;
-	margin-left: 0px;
+	margin-left: -40px;
 }
 
 .sidebar .menu-sidebar li a{
 	display: block;
-	width: 100px;
+	width: 130px;
 	padding: 5px 10px;
 	background:#4b7da0;
 	border : 1px solid #4b7da0;
@@ -352,7 +465,7 @@ textarea{
 
 .oupas-pannel {
 	display: block; 
-	border: 1px solid #187048; 
+	border: 1px solid #6B6B96; 
 	border-top: none; 
 	padding: 15px;
 	color: #187048;
@@ -385,6 +498,7 @@ textarea{
 	border: 1px solid #6B6B96;
 	display: block;
 	margin-bottom: 20px;
+	margin-top: 30px;
 }
 
 #intro-widget p {

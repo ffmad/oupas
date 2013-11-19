@@ -45,7 +45,7 @@ get_header(); ?>
 							<a href="<?php the_permalink(); ?>">
 							<div class="content-quote">
 								<span style="display: block; float: left;">
-									<?php if (get_the_post_thumbnail()) : ?><div style="width: 80px; max-height: 80px; border:1px rgb(201, 163, 163) ridge" ><?php the_post_thumbnail(array(100, 100)) ?></div>
+									<?php if (get_the_post_thumbnail()) : ?><div style="width: 80px; max-height: 80px; 1px rgb(152, 163, 195) ridge;" ><?php the_post_thumbnail(array(78, 78)) ?></div>
 									<?php else : ?><img src="<?php bloginfo('template_url'); ?>/img/logo_vert.png" style="width: 80px; max-height: 80px; border:1px rgb(201, 163, 163) ridge" alt="Ou Pas"/>
 									<?php endif; ?>
 									<span class="aparte">
