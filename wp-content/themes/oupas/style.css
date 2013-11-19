@@ -178,7 +178,14 @@ header.navbar-inverse .navbar-brand, header.navbar-inverse .navbar-brand:hover {
 		background: white;
 		color: #187048;
 	}
-	
+
+@media screen and (max-width: 990px) {
+	header.navbar-inverse .nav>li.active a {
+		background: #184768;
+		color: white;
+	}
+}
+
 	header.navbar-inverse #follow {
 		color: white;
 		margin-top: 5px;

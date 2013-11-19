@@ -9,7 +9,7 @@ get_header(); ?>
 
 	<div class="container">
 		<div class="row test">
-			<section class="span6 offset3">
+			<section class="span6 offset3" style="width: auto; float: none;">
 			<h2> Bien ... ou pas ? </h2>
 			
 				

@@ -16,9 +16,9 @@
 	</p>
 	<p style="padding-bottom: 10px;">
 		<label for="quote_sexe" >Avatar</label>
-		<input type="file" name="image" id="quote_avatar">
+		<input style="float: left;" type="file" name="image" id="quote_avatar">
 	</p>
-	<p>
+	<p style="margin-top: 30px;">
 		<label for="quote_themes" >Thèmes</label>
 		<select id="quote_themes" name="quote_themes" placeholder="Le thème de votre quote">
 			<?php foreach( get_terms( 'themes', array( 'hide_empty' => false ) ) as $term ): ?>	
