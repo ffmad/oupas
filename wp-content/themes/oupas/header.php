@@ -68,6 +68,24 @@
 					  'walker' => new wp_bootstrap_navwalker())
 					);
 				?>
+				<ul class="nav navbar-nav navbar-right">
+					<li>
+						<?php
+							$facebook = ot_get_option ('facebook');
+							$twitter = ot_get_option ('twitter');
+						?>
+						<?php if(!empty($facebook)) : ?>
+							<a href="<?php echo esc_url( $facebook ); ?>" class="fb"><i class="icon-facebook icon-2x"></i></a>
+							<?php else: ?>
+							<a></a>
+						<?php endif; ?>
+						<?php if(!empty($twitter)) : ?>
+							<a href="<?php echo esc_url( $twitter ); ?>" class="twt"><i class="icon-twitter icon-2x"></i></a>
+							<?php else: ?>
+							<a></a>
+						<?php endif; ?>
+					</li>
+				</ul>
 			</nav>
 		</div>
 	</header>

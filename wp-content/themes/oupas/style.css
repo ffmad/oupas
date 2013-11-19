@@ -200,6 +200,22 @@ header.navbar-inverse .navbar-brand, header.navbar-inverse .navbar-brand:hover {
 		background: none;
 	}
 	header.navbar-inverse #follow a.twt{margin-left: 15px;}
+	
+	header.navbar-inverse .navbar-collapse .navbar-nav.navbar-right:last-child {
+		margin-top: -60px; 
+		margin-right: -50px;
+	}
+
+@media screen and (max-width: 770px) {
+	header.navbar-inverse .navbar-collapse .navbar-nav.navbar-right:last-child {
+		margin-top: 0px; 
+		margin-right: 0px;
+	}
+	
+	header.navbar-inverse ul.nav.navbar-right a{
+		padding: 10px;
+	}
+}
 
 /* ----------------------
 	STYLE QUOTE
