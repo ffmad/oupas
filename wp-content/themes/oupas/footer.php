@@ -27,12 +27,12 @@
 	UserVoice = window.UserVoice || [];
 	UserVoice.push(['showTab', 'classic_widget', {
 		mode: 'full',
-		primary_color: '#bf0426',
-		link_color: '#636566',
+		primary_color: '#187048',
+		link_color: '#184768',
 		default_mode: 'feedback',
 		forum_id: 230752,
-		tab_label: 'Commentaires',
-		tab_color: '#bf0426',
+		tab_label: 'Suggestions d\'amelioration',
+		tab_color: '#187048',
 		tab_position: 'middle-right',
 		tab_inverted: false
 	}]);

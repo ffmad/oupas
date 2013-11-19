@@ -75,12 +75,12 @@
 							$twitter = ot_get_option ('twitter');
 						?>
 						<?php if(!empty($facebook)) : ?>
-							<a href="<?php echo esc_url( $facebook ); ?>" class="fb"><i class="icon-facebook icon-2x"></i></a>
+							<a href="<?php echo esc_url( $facebook ); ?>" target="_blank;" class="fb"><i class="icon-facebook icon-2x"></i></a>
 							<?php else: ?>
 							<a></a>
 						<?php endif; ?>
 						<?php if(!empty($twitter)) : ?>
-							<a href="<?php echo esc_url( $twitter ); ?>" class="twt"><i class="icon-twitter icon-2x"></i></a>
+							<a href="<?php echo esc_url( $twitter ); ?>" target="_blank;" class="twt"><i class="icon-twitter icon-2x"></i></a>
 							<?php else: ?>
 							<a></a>
 						<?php endif; ?>
