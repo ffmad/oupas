@@ -36,6 +36,24 @@
 		tab_position: 'middle-right',
 		tab_inverted: false
 	}]);
+	
+	$( document ).ready(function() {
+		var t, l = (new Date()).getTime();
+
+		$(window).bind('scroll', function() {
+			var now = (new Date()).getTime();
+
+			if(now - l > 300){
+				l = now;
+			}
+
+			clearTimeout(t);
+			t = setTimeout(function(){
+				var scrollYpos = 30+$(window).scrollTop();
+				$(".sidebar").css("margin-top", scrollYpos);
+			}, 200);
+		});
+	});
 	</script>
 </body>
 </html>
